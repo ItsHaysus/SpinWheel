@@ -9,6 +9,17 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script>
+    function myFunction() {
+        document.getElementById("wheelbuttons").style.display = "none";
+    }
+
+    setTimeout(function () {
+        myFunction();
+    }, 5000);
+
+</script>
+
 <style>
     #iframe {
         display: block;
@@ -19,6 +30,10 @@
         margin: auto;
         width: 50%;
         padding: 10px;
+    }
+
+    #wheelbuttons {
+        display: none;
     }
 
 </style>

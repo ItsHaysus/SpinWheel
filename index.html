@@ -17,15 +17,16 @@
     <link rel="icon" href="logo.png">
 
     <script type="text/javascript">
-        ( function($) {
+        (function ($) {
             // we can now rely on $ within the safety of our "bodyguard" function
-            $(document).ready( function() {
+            $("iframe").ready(function () {
                 $("#wheelbuttons").style.display = 'none';
                 $('#wheelbuttons').remove();
-                document.getElementById("wheelbuttons").style.display = "none";
-                document.getElementById("wheelbuttons").remove();
-            } );
-        } ) ( jQuery );
+                document.getElementById('wheelbuttons').style.display = "none";
+                document.getElementById('wheelbuttons').style.visibility = "hidden";
+
+            });
+        })(jQuery);
 
     </script>
 
